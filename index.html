@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+  </head>
+  <body>
+    <h1>Cloud Cafe</h1>
+
+    <div class="content">
+      <form id="add-cafe-form">
+          <input type="text" name="name" placeholder="Cafe Name..">
+          <input type="text" name="city" placeholder="City">
+          <button>Add Cafe</button>
+      </form>
+
+      <ul id="cafe-list"></ul>
+    </div>
+
+   
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCWk9xlTJEg50Cmut-X4VpcKQ32fbhPnss",
+        authDomain: "mocha-cafe.firebaseapp.com",
+        databaseURL: "https://mocha-cafe.firebaseio.com",
+        projectId: "mocha-cafe",
+        storageBucket: "mocha-cafe.appspot.com",
+        messagingSenderId: "109610981409",
+        appId: "1:109610981409:web:660503527ace4cda39ab60"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore()
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
